@@ -1,0 +1,351 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #333;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    width: 100%;
+    min-height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 7%;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    list-style: none;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+
+    position: relative;
+
+    transition: color 0.3s ease;
+}
+
+
+/* Underline animation */
+
+ul li a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+
+    width: 0;
+    height: 2px;
+
+    background: white;
+
+    transition: width 0.3s ease;
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+
+ul li a:hover {
+    color: #ffe5e5;
+}
+
+
+/* =========================
+   MAIN / HERO SECTION
+========================= */
+
+main {
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 120px 20px 80px;
+
+    position: relative;
+
+    background-image:
+        linear-gradient(
+            rgba(150, 0, 0, 0.55),
+            rgba(150, 0, 0, 0.55)
+        ),
+        url("../img/bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   HERO ZOMATO LOGO
+========================= */
+
+main img {
+    width: 280px;
+    max-width: 80%;
+
+    margin-bottom: 25px;
+
+    animation: logoAppear 1s ease forwards;
+}
+
+
+/* Logo animation */
+
+@keyframes logoAppear {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.6) translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+
+/* =========================
+   HERO TEXT
+========================= */
+
+main p {
+    color: white;
+
+    font-size: 28px;
+    font-weight: 500;
+
+    margin-bottom: 30px;
+
+    animation: textAppear 1s ease 0.3s both;
+}
+
+@keyframes textAppear {
+
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   SEARCH BOX
+========================= */
+
+main input {
+    width: 550px;
+    max-width: 90%;
+
+    padding: 18px 25px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 30px;
+
+    background: white;
+
+    color: #333;
+
+    font-size: 16px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+
+    animation: searchAppear 1s ease 0.6s both;
+
+    transition: all 0.3s ease;
+}
+
+main input::placeholder {
+    color: #777;
+}
+
+main input:focus {
+    transform: scale(1.03);
+
+    box-shadow:
+        0 0 0 4px rgba(255, 255, 255, 0.3),
+        0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes searchAppear {
+
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #8b0000;
+
+    color: white;
+
+    font-size: 14px;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    ul li a {
+        font-size: 14px;
+    }
+
+    main {
+        padding-top: 180px;
+    }
+
+    main img {
+        width: 220px;
+    }
+
+    main p {
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    main input {
+        width: 90%;
+        padding: 15px 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    header {
+        min-height: 100px;
+    }
+
+    ul {
+        gap: 10px;
+    }
+
+    ul li a {
+        font-size: 12px;
+    }
+
+    main img {
+        width: 180px;
+    }
+
+    main p {
+        font-size: 18px;
+    }
+}
