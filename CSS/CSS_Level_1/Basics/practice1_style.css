@@ -1,0 +1,12 @@
+/* unique id selector */
+#Box{
+    background-color: blue;
+}
+/* class selector */
+.heading{
+    color:red;
+}
+/* color stystem */
+button{
+    background-color: green;
+}

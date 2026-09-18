@@ -1,0 +1,14 @@
+h1{
+  text-transform: capitalize;
+  text-align: center;
+}
+#unique{
+  font-family: 'Times New Roman';
+  text-decoration: underline;
+}
+#outer{
+  font-size:25px;
+}
+#inner{
+  font-size:10px;
+}

@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+}
+#heading{
+    text-decoration:underline;
+}
+p{
+    font-weight:lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+#unit{
+    font-size: 40px;
+}
+#height{
+    line-height: 20px;
+}
