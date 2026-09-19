@@ -1,0 +1,26 @@
+#unique{
+    background-color: blue;
+    margin: 25px;
+    padding: 25px;
+    height:200px;
+    width:200px;
+}
+div{
+  
+  display: inline;
+  color: rgba(255, 0, 0, 0.5);
+
+}
+
+span{
+    display:inline;
+    color: rgba(255, 0, 0, 1);
+    visibility:none;
+}
+
+button{
+    display: inline;
+    color:rgba(0, 255, 0, 0.9);
+    display:none;
+
+}

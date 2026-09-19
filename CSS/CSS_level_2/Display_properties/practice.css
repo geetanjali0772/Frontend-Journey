@@ -1,0 +1,29 @@
+
+#navbar{
+background-color:black;
+height: 60px;
+}
+#logo{
+    font-size:25px;
+    color:orange;
+    padding-left: 25px;
+}
+button{
+    background-color: rgb(194, 194, 24);
+}
+a{
+   margin-right:200px;
+   text-decoration: none;
+   color: white;
+}
+.contentbox{
+    height:100px;
+    width:100px;
+    border:2px solid black;
+    display:inline-block;
+
+}
+#content{
+    height:600px
+    
+}
