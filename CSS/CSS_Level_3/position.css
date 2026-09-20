@@ -1,0 +1,60 @@
+.contentbox {
+
+    /* for absolute psoition */
+    position: relative;
+    display: inline-block;
+}
+
+#box1 {
+    height: 200px;
+    width: 200px;
+    border: 2px solid pink;
+    background-color: orange;
+    position: static;
+    /* top and left doesnt work for the static position */
+    top: 20px;
+    left: 30px;
+}
+
+#box2 {
+    height: 200px;
+    width: 200px;
+    border: 2px solid pink;
+    background-color: green;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    z-index: -2;
+}
+
+#box3 {
+    height: 200px;
+    width: 200px;
+    border: 2px solid pink;
+    background-color: yellow;
+    position: fixed;
+    top: 20px;
+    left: 30px;
+
+}
+
+#box4 {
+    height: 200px;
+    width: 200px;
+    border: 2px solid pink;
+    background-color: red;
+    position: absolute;
+    top: 100px;
+    left: 70px;
+}
+
+#box5 {
+    height: 200px;
+    width: 200px;
+    border: 2px solid pink;
+    background-color: blue;
+    z-index:2;
+    position: sticky;
+    top: 0;
+}
+

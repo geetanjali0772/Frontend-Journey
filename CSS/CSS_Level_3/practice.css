@@ -1,0 +1,10 @@
+div{
+    height: 300px;
+    width: 400px;
+    background-image:url("practice_image.jpg") ;
+    background-size: cover;
+    position:fixed;
+    right: 0px;
+    top: 0px;
+    z-index:4;
+}
