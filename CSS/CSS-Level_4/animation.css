@@ -1,0 +1,36 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    border: 4px solid black;
+    animation-name: imganimation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    background-size: cover;
+
+}
+
+@keyframes imganimation{
+             from{background-image:url(background_image.jpg) ;}
+             to{background-image:url(practice_image.jpg);}
+}
+
+/* % in animation to add animation in between */
+@keyframes imganimation {
+    0% {
+        background-image: url(background_image.jpg);
+    }
+
+    50% {
+        background-image: url(practice_image.jpg);
+    }
+
+    100% {
+        background-image: url(background_image.jpg);
+    }
+
+
+}
